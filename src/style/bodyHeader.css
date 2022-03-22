@@ -1,0 +1,21 @@
+.bodyHeader{
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: sticky;
+top: 0;
+border-bottom: 2px solid rgb(232, 238, 238) ;
+}
+
+.bodyHeader svg{
+ font-size: 2.7vh;
+}
+
+.bodyHeader_right{
+    display: flex;
+    align-items: center;
+}
+
+.bodyHeader_right p{
+    font-size: 1.9vh;
+}
