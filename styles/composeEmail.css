@@ -1,0 +1,191 @@
+.composeEmail {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    right: 12vh;
+    min-width: 35vw;
+    overflow: hidden;
+    border-radius: 1.5vh 1.5vh 0 0;
+    box-shadow: .5vh .5vh 1vh .5vh rgb(217, 217, 217) ;
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .composeEmail {
+        right: 0;
+        min-width: 20vw;
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .composeEmailBody{
+        height: 30vh;
+    }
+    /* .composeEmail {
+        right: 0;
+        width: 40vw;
+        bottom: 0;
+        height: 20vh;
+    } */
+}
+@media only screen and (max-width: 200px) {
+    .composeEmail {
+        /* top:4vh;
+        right: 0;
+        width: 40vw;
+        bottom: 0; */
+        bottom: 0;
+        right: 0;
+        width: 40vw;
+
+    }
+}
+
+
+/* Email Header ---------------------------------------------*/
+
+.composeEmailHeader {
+    display: flex;
+    background-color: #4b4a4a;
+    color: rgb(255, 255, 255);
+    justify-content: space-between;
+    padding: 1vh 1vh;
+}
+
+.composeEmailHeader svg {
+    font-size: 2.5vh;
+    margin-left: 1vh;
+    padding: .5vh;
+    color: rgb(207, 211, 207);
+
+}
+
+.composeEmailHeader svg:hover {
+    background-color: rgb(163, 161, 161);
+    color: honeydew;
+    cursor: pointer;
+}
+
+.composeEmailHeader span {
+    font-size: 2vh;
+}
+
+.composeEmailHeader_Left {
+    display: flex;
+    align-items: center;
+}
+
+.composeEmailHeader_Right {
+    display: flex;
+    align-items: center;
+}
+
+/* Email Body --------------------------------------------------------*/
+
+
+.composeEmailBody {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.composeEmailBody_Field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.composeEmailBody_Field input,
+textarea {
+    height: 6.7vh;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    border-top: 2px solid rgb(238, 238, 234) !important;
+    /* margin: 0vh .1vh .1vh .7vh; */
+    padding: 1vh .1vh .8vh 2vh;
+
+}
+
+.composeEmailBody_Field input,
+textarea {
+    height: auto;
+
+}
+
+
+/* Email Footer */
+
+.composeEmailFooter {
+    display: flex;
+    align-items: center;
+    padding: .5vh 1vh;
+    margin: 1vh 1vh;
+    justify-content: space-between;
+}
+
+.composeEmailFooter svg {
+    font-size: 2.8vh;
+    justify-content: space-between;
+    color: rgb(121, 118, 118);
+}
+
+.composeEmailFooter svg:hover {
+    
+    background-color: rgba(214, 207, 207, 0.863);
+    color: black;
+}
+
+.composeEmailFooter_Left {
+    display: flex;
+    align-items: center;
+    padding: 1vh;
+    justify-content: space-between;
+}
+
+.composeEmailFooter_Left>button {
+    display: flex;
+    align-items: center;
+    background-color: rgb(26, 115, 233);
+    color: rgb(250, 250, 250);
+    border-radius: .5vh;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    font-size: 2vh;
+    border-right: 1px solid gray;
+    padding-left: 2vh;
+    
+    
+}
+.composeEmailFooter_Left>button:hover{
+    box-shadow: .1vh .1vh .1vh .1vh rgb(207, 201, 201);
+}
+
+.composeEmailFooter_Left>button svg {
+    
+    border-left: .2vh solid gray;
+    padding:1vh .3vh;
+    /* margin:  .5vh .5vh; */
+    margin-left: 2vh;
+   color: honeydew;
+}
+
+.composeEmailFooter_Left>button svg:hover {
+    background-color: rgb(26, 115, 233) ;
+    color: honeydew;
+}
+
+.composeEmailFooter_Left svg{
+    margin-left: 1vh;
+   
+}
+
+
+
+.composeEmailFooter_Right svg{
+    margin-right: 1vh;
+    
+}
